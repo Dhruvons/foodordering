@@ -1,0 +1,268 @@
+/* cascading slide sheet// */
+/* X{Color:blue;} x=khan pe changes karne h (ESE SELECTOR BOLTE ) color matlab kya or blue matlab kisme }  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+ /* forr smooth scrolling  */
+ html{
+    scroll-behavior: smooth;
+ }
+:root{
+    --nav-height: 59px;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+
+/* logo and image  */
+#logo{
+    margin: 2px 34px; /*div ki margin*/
+}
+#logo img{
+margin: 3px 6px;
+height: 59px;
+
+}
+#nav ul{
+    display: flex;
+    /* padding: 0px 5px;
+    font-family: 'Lilita One', cursive; */
+
+
+}
+
+#nav::before{
+    content:"";
+    background: black;
+    position: absolute;
+    /* top: 0%;
+    left: 0px; */
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.4;
+    /* border-radius: 05px;  */
+    
+
+}
+#nav ul li{
+    list-style: none;
+    font-size: 1.4  rem;
+}
+#nav ul li a{
+    /* isme padding dalni h kyu ki jab hover 
+    kare to padding pe jate hi 
+    chges ho upper karte to padding pe 
+    jate hi link  me chges ns ate  */
+    text-decoration: none;
+    padding: 3px 20px;
+    color: white;
+    margin: 8px;
+    display: block;
+    border-radius: 20px;
+    font-family: 'Lilita One', cursive;
+
+    
+}
+
+#nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+/* home section  */
+#home{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 3px 200px;
+     height: 515px;
+}
+
+#home::before{
+    content:"";
+    background:url(stick.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    height: 80%;
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.85;
+    
+}
+
+#home h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+#home  p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+/* services container  */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 36px;
+    margin: 3px 20px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background-color: rgb(247, 237, 237);
+}
+#services .box img{
+    display: block;
+    margin: auto;   /*for center*/
+    height:150px ;
+}
+#services p{
+    text-align: center;
+}
+#services .box h2{
+    text-align: center;
+    
+}
+/* clients  */
+#client-section{
+    /* height: 444x; */
+    position: relative;
+
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background:url(all.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+.client-item{
+    padding:20px;
+}
+
+  
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 355px;
+    
+}
+#clients img{
+    height: 140px;
+    border-radius: 15px;
+
+}
+
+/* contact section  */
+
+#contact{
+position: relative;
+
+}
+#contact::before{
+    content:"";
+    background:url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+    
+    }
+    #contact-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4px;
+
+    }
+    #contact-box form{
+        width: 40%;
+    }
+    #contact-box label{
+        font-size: 1.6rem;
+        font-family: 'Lilita One', cursive;
+    }
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1rem;
+    }
+    #contact-box input{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size:1.3rem ;
+    }
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+}
+
+
+.secondary{
+    font-size: 2.3rem;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+/* for whole class  or utility class
+ye jab bano or utna hi likho esme jab aap esiko or bhi jaga 
+kam me le sako jese koi or hading ayi to yahi class
+likh do usme or extra styling k liye jo 
+sari hading me same nahi deni usko alag se target karlo
+jese #home h1 {} esme or kuch likh l*/
+.primary{
+font-size: 2.8rem;
+    padding: 12px; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+}
+
+
+
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: rgb(249, 1, 1);
+    color: white;
+    margin:17px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* display: flex; */
+    /* position: absolute;
+    top: 390px; */
+}
+.btn:hover{
+    opacity: 0.75;
+}
